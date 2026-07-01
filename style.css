@@ -152,24 +152,18 @@ a { color: inherit; }
 /* ===== Cuisine (primary section) ===== */
 .cuisine-section { text-align: center; }
 
-.cuisine-carousel {
-  position: relative; border-radius: 4px; overflow: hidden;
-  height: clamp(320px, 46vw, 560px); margin: clamp(40px, 5vw, 60px) 0; background: #e5ddce;
+.cuisine-hero-media { border-radius: 4px; overflow: hidden; height: clamp(320px, 46vw, 560px); margin: clamp(40px, 5vw, 24px) 0; }
+.cuisine-hero-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.cuisine-strip {
+  display: flex; gap: 14px; overflow-x: auto; padding: 4px 4px 16px; margin-bottom: clamp(24px, 4vw, 40px);
+  scroll-snap-type: x proximity;
 }
-.cuisine-carousel__slide { position: absolute; inset: 0; opacity: 0; transition: opacity 0.5s ease; }
-.cuisine-carousel__slide.is-active { opacity: 1; }
-.cuisine-carousel__slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.cuisine-carousel__btn {
-  position: absolute; top: 50%; transform: translateY(-50%); z-index: 2;
-  width: 42px; height: 42px; border-radius: 50%; border: none; cursor: pointer;
-  background: rgba(250,247,241,0.85); color: #211d19; font-size: 18px; line-height: 1;
-  display: flex; align-items: center; justify-content: center;
+.cuisine-strip__item {
+  flex: 0 0 auto; width: clamp(160px, 22vw, 220px); height: clamp(120px, 16vw, 160px);
+  border-radius: 4px; overflow: hidden; scroll-snap-align: start;
 }
-.cuisine-carousel__btn--prev { left: 16px; }
-.cuisine-carousel__btn--next { right: 16px; }
-.cuisine-carousel__dots { position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); z-index: 2; display: flex; gap: 8px; }
-.cuisine-carousel__dot { width: 7px; height: 7px; border-radius: 50%; border: none; padding: 0; cursor: pointer; background: rgba(255,255,255,0.55); }
-.cuisine-carousel__dot.is-active { background: #fff; }
+.cuisine-strip__item img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 .cuisine-points { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0; margin-top: clamp(48px, 6vw, 72px); text-align: left; border-top: 1px solid rgba(33,29,25,0.1); }
 .cuisine-point { padding: 30px 26px; border-bottom: 1px solid rgba(33,29,25,0.1); border-right: 1px solid rgba(33,29,25,0.1); }
