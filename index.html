@@ -7,7 +7,7 @@
 <meta name="description" content="牛窓からフェリーで5分、前島の高台に建つ民宿「南風荘」。瀬戸内の新鮮な海鮮料理と、一棟貸しの離れ3棟、前島海水キャンプ場。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,11 +16,11 @@
   <div class="site-header__inner">
     <a href="#top" class="logo">
       <span class="logo__ja">南風荘</span>
-      <span class="logo__en">MAEJIMA</span>
+      <span class="logo__en">Maejima</span>
     </a>
     <nav class="nav-desktop">
-      <a href="#about">島の宿</a>
       <a href="#cuisine">海鮮料理</a>
+      <a href="#about">島の宿</a>
       <a href="#stay">離れ</a>
       <a href="#camp">キャンプ場</a>
       <a href="#voice">お客様の声</a>
@@ -34,8 +34,8 @@
     </button>
   </div>
   <nav class="nav-mobile" id="mobile-menu">
-    <a href="#about">島の宿</a>
     <a href="#cuisine">海鮮料理</a>
+    <a href="#about">島の宿</a>
     <a href="#stay">離れ</a>
     <a href="#camp">キャンプ場</a>
     <a href="#voice">お客様の声</a>
@@ -57,94 +57,112 @@
   </div>
 </section>
 
-<section id="about" class="section">
-  <div class="section__inner about__grid">
+<!-- ===== CUISINE — primary focus ===== -->
+<section id="cuisine" class="section cuisine-section">
+  <div class="section__inner">
+    <div class="section-head">
+      <div class="eyebrow-num">
+        <span class="eyebrow-num__no">N°01</span>
+        <span class="eyebrow-num__label">Cuisine — 海鮮料理</span>
+      </div>
+      <h2 class="display-heading">
+        <span class="display-heading__en">Fresh from the Sea.</span>
+        <span class="display-heading__ja">その日の海が、そのまま食卓へ。</span>
+      </h2>
+      <p class="body-text body-text--center-wide">南風荘の名物は、瀬戸内の新鮮な海の幸。畳のお部屋で、海を眺めながらの食事。旬の味を、いちばんおいしいかたちで。昼の会食のみのご利用も承ります。</p>
+    </div>
+
+    <div class="cuisine-hero-media">
+      <img src="https://images.weserv.nl/?url=ww7.enjoy.ne.jp/~bochibochi/IMG_20240906_2307021.jpg" alt="瀬戸内の海鮮料理の盛り合わせ">
+    </div>
+
+    <div class="cuisine-points">
+      <div class="cuisine-point">
+        <div class="cuisine-point__no">01</div>
+        <div class="cuisine-point__en">Fresh Catch</div>
+        <h3 class="cuisine-point__title">大将自らが、海へ。</h3>
+        <p class="cuisine-point__desc">ときには大将が自ら海へ漁に出て、その日いちばんの魚をお出しします。獲れたての鮮度を、そのまま食卓へ。</p>
+      </div>
+      <div class="cuisine-point">
+        <div class="cuisine-point__no">02</div>
+        <div class="cuisine-point__en">Local to Table</div>
+        <h3 class="cuisine-point__title">地産地消がモットー。</h3>
+        <p class="cuisine-point__desc">島と海の恵みを、できるだけそのままの姿で。地産地消を大切に、旬をいちばんおいしい時季にお出しします。</p>
+      </div>
+      <div class="cuisine-point">
+        <div class="cuisine-point__no">03</div>
+        <div class="cuisine-point__en">Take & Enjoy</div>
+        <h3 class="cuisine-point__title">お弁当・昼の会食も。</h3>
+        <p class="cuisine-point__desc">お弁当のテイクアウトあり。ご宿泊なしでも、昼の会食のみのご利用が可能です。お気軽にご相談ください。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT — compact, secondary ===== -->
+<section id="about" class="section section--compact section--alt">
+  <div class="section__inner about__grid-compact">
+    <div class="about__media-compact">
+      <img src="https://images.weserv.nl/?url=ww7.enjoy.ne.jp/~bochibochi/IMG_6134.jpg" alt="畳の部屋から海を望む">
+      <img src="https://images.weserv.nl/?url=ww7.enjoy.ne.jp/~bochibochi/IMG_61791.jpg" alt="島の砂浜">
+    </div>
     <div>
-      <div class="eyebrow">島の宿について</div>
-      <h2 class="heading">なにもない、が<br>ここちよい。</h2>
-      <p class="body-text">南風荘は、牛窓の港からフェリーでわずか5分。信号もコンビニもない、のどかな島「前島」の南側の高台に建っています。正面には小豆島や香川の山並みが一望でき、眼下の砂浜までは歩いて4分ほど。</p>
-      <p class="body-text body-text--last">畳のお部屋で、瀬戸内の海をながめながらの食事。潮の香りと波の音のほかは、なにもない。そんな島時間を、ゆっくり味わってください。</p>
+      <div class="eyebrow-num eyebrow-num--left">
+        <span class="eyebrow-num__no">N°02</span>
+        <span class="eyebrow-num__label">Island — 島の宿</span>
+      </div>
+      <h2 class="heading heading--sm">なにもない、が、ここちよい。</h2>
+      <p class="body-text body-text--last">牛窓の港からフェリーでわずか5分、前島の南側の高台。正面には小豆島や香川の山並みが一望でき、砂浜までは歩いて4分ほどです。</p>
       <div class="tag-row">
         <span class="tag tag--outline">フェリーで5分</span>
         <span class="tag tag--outline">砂浜まで徒歩4分</span>
         <span class="tag tag--outline">高台から海一望</span>
       </div>
     </div>
-    <div class="about__collage">
-      <div class="about__collage-main">
-        <img src="https://images.weserv.nl/?url=ww7.enjoy.ne.jp/~bochibochi/IMG_6134.jpg" alt="畳の部屋から海を望む">
-      </div>
-      <div class="about__collage-sub">
-        <img src="https://images.weserv.nl/?url=ww7.enjoy.ne.jp/~bochibochi/IMG_61791.jpg" alt="島の砂浜">
-      </div>
-      <div class="about__collage-sub">
-        <img src="https://images.weserv.nl/?url=ww7.enjoy.ne.jp/~bochibochi/7500.png" alt="夕暮れの海">
-      </div>
-    </div>
   </div>
 </section>
 
-<section id="cuisine" class="section section--dark">
-  <div class="section__inner cuisine__grid">
-    <div class="cuisine__media">
-      <img src="https://images.weserv.nl/?url=ww7.enjoy.ne.jp/~bochibochi/IMG_20240906_2307021.jpg" alt="瀬戸内の海鮮料理の盛り合わせ">
-    </div>
-    <div class="cuisine__text">
-      <div class="eyebrow eyebrow--dark">海鮮料理</div>
-      <h2 class="heading heading--dark">その日の海が、<br>そのまま食卓へ。</h2>
-      <p class="body-text body-text--dark">南風荘の名物は、瀬戸内の新鮮な海の幸。ときには大将が自ら海へ漁に出て、その日いちばんの魚をお出しします。地産地消がモットー。旬の味を、いちばんおいしいかたちで。</p>
-      <p class="body-text body-text--dark body-text--last">畳のお部屋で、海を眺めながらの食事。昼の会食のみのご利用も承ります。</p>
-      <div class="stat-row">
-        <div class="stat">
-          <div class="stat__title">大将が漁へ</div>
-          <div class="stat__sub">獲れたての鮮度</div>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <div class="stat__title">地産地消</div>
-          <div class="stat__sub">島と海の恵み</div>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <div class="stat__title">お弁当</div>
-          <div class="stat__sub">テイクアウト可</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+<!-- ===== STAY / VILLAS — elevated ===== -->
 <section id="stay" class="section">
   <div class="section__inner">
     <div class="section-head">
-      <div class="eyebrow">お部屋・離れ</div>
-      <h2 class="heading">過ごし方にあわせて選ぶ、<br>一棟貸しの離れ。</h2>
-      <p class="body-text body-text--center">本館のほか、それぞれに趣のちがう3棟の離れをご用意。清掃・消毒・タオル類は毎日交換、プライバシーに配慮した造りです。</p>
+      <div class="eyebrow-num">
+        <span class="eyebrow-num__no">N°03</span>
+        <span class="eyebrow-num__label">Villas — 一棟貸しの離れ</span>
+      </div>
+      <h2 class="display-heading">
+        <span class="display-heading__en">Stay Your Way.</span>
+        <span class="display-heading__ja">過ごし方にあわせて選ぶ、一棟貸しの離れ。</span>
+      </h2>
+      <p class="body-text body-text--center-wide">本館のほか、それぞれに趣のちがう3棟の離れをご用意。清掃・消毒・タオル類は毎日交換、プライバシーに配慮した造りです。</p>
+    </div>
+
+    <div class="villa-feature">
+      <div class="villa-feature__media">
+        <img src="https://images.weserv.nl/?url=ww7.enjoy.ne.jp/~bochibochi/IMG_20230303_174910.jpg" alt="南風テラス">
+      </div>
+      <div>
+        <div class="villa-feature__en">Nanpu Terrace</div>
+        <h3 class="villa-feature__name">南風テラス</h3>
+        <div class="villa-feature__tagline">Just the two of you.</div>
+        <p class="villa-feature__desc">海を独り占めできる、大人ふたりのための和風の離れ。記念日やお誕生日、ちょっと特別な週末に。静かに寄り添う時間を、海を眺めながら。カップル・ご夫婦はもちろん、大切な人とのひとときを求めるすべての世代におすすめです。</p>
+        <div class="tag-row">
+          <span class="tag tag--hash">#記念日</span>
+          <span class="tag tag--hash">#カップル</span>
+          <span class="tag tag--hash">#夫婦</span>
+          <span class="tag tag--fill">一棟貸し</span>
+          <span class="tag tag--fill">和風</span>
+        </div>
+      </div>
     </div>
 
     <div class="villa-grid">
       <article class="villa-card">
         <div class="villa-card__media">
-          <img src="https://images.weserv.nl/?url=ww7.enjoy.ne.jp/~bochibochi/IMG_20230303_174910.jpg" alt="南風テラス">
-        </div>
-        <div class="villa-card__body">
-          <div class="villa-card__en">NANPU TERRACE</div>
-          <h3 class="villa-card__name">南風テラス</h3>
-          <div class="villa-card__tagline">ふたりで、ゆっくり。</div>
-          <p class="villa-card__desc">2人でゆっくり過ごす和風の離れ。静かに寄り添う時間を、海を眺めながら。カップル・ご夫婦におすすめです。</p>
-          <div class="tag-row">
-            <span class="tag tag--fill">カップル・夫婦向け</span>
-            <span class="tag tag--fill">和風</span>
-            <span class="tag tag--fill">一棟貸し</span>
-          </div>
-        </div>
-      </article>
-      <article class="villa-card">
-        <div class="villa-card__media">
           <img src="https://images.weserv.nl/?url=ww7.enjoy.ne.jp/~bochibochi/IMG_20240901_131420%20hp.jpg" alt="南風ヴィラ">
         </div>
         <div class="villa-card__body">
-          <div class="villa-card__en">NANPU VILLA</div>
+          <div class="villa-card__en">Nanpu Villa</div>
           <h3 class="villa-card__name">南風ヴィラ</h3>
           <div class="villa-card__tagline">みんなで、わいわい。</div>
           <p class="villa-card__desc">3階建てで、グループみんなでワイワイ過ごせる離れ。にぎやかな時間にぴったり。ペットと一緒にご宿泊いただけます。</p>
@@ -160,7 +178,7 @@
           <img src="https://images.weserv.nl/?url=ww7.enjoy.ne.jp/~bochibochi/IMG_20250403_08464211.png" alt="南風ハウス">
         </div>
         <div class="villa-card__body">
-          <div class="villa-card__en">NANPU HOUSE</div>
+          <div class="villa-card__en">Nanpu House</div>
           <h3 class="villa-card__name">南風ハウス</h3>
           <div class="villa-card__tagline">家族で、ほっこり。</div>
           <p class="villa-card__desc">家族でほっこり過ごす、島の一軒家。わが家のようにくつろげる離れです。ペットと一緒にご宿泊いただけます。</p>
@@ -175,24 +193,34 @@
   </div>
 </section>
 
-<section id="camp" class="section section--camp">
+<!-- ===== CAMP — dark contrast (night / bonfire mood) ===== -->
+<section id="camp" class="section section--dark">
   <div class="section__inner camp__grid">
     <div class="camp__media">
       <img src="https://images.weserv.nl/?url=ww7.enjoy.ne.jp/~bochibochi/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4.jpg" alt="海辺の前島海水キャンプ場">
     </div>
     <div>
-      <div class="eyebrow">前島海水キャンプ場</div>
-      <h2 class="heading heading--sm">波打ち際で、<br>火を囲む夜を。</h2>
-      <p class="body-text body-text--last">南風荘が運営する海辺のキャンプ場。目の前は瀬戸内の穏やかな海。焚き火を囲んで、島の静かな夜と満天の星を楽しめます。通年営業でご利用いただけます。</p>
-      <span class="tag tag--outline">通年営業</span>
+      <div class="eyebrow-num eyebrow-num--left eyebrow-num--dark">
+        <span class="eyebrow-num__no">N°04</span>
+        <span class="eyebrow-num__label">Camp — 前島海水キャンプ場</span>
+      </div>
+      <h2 class="heading heading--dark heading--sm">波打ち際で、火を囲む夜を。</h2>
+      <p class="body-text body-text--dark body-text--last">南風荘が運営する海辺のキャンプ場。目の前は瀬戸内の穏やかな海。焚き火を囲んで、島の静かな夜と満天の星を楽しめます。通年営業でご利用いただけます。</p>
+      <div class="tag-row">
+        <span class="btn btn--outline-dark">通年営業</span>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- ===== VOICE / REVIEWS ===== -->
 <section id="voice" class="section">
   <div class="section__inner">
     <div class="section-head section-head--voice">
-      <div class="eyebrow">お客様の声</div>
+      <div class="eyebrow-num">
+        <span class="eyebrow-num__no">N°05</span>
+        <span class="eyebrow-num__label">Voice — お客様の声</span>
+      </div>
       <h2 class="heading">島を訪れたかたから。</h2>
       <div class="rating-row">
         <div class="rating-badge">
@@ -249,10 +277,14 @@
   </div>
 </section>
 
-<section id="access" class="section">
+<!-- ===== ACCESS / INFO ===== -->
+<section id="access" class="section section--alt">
   <div class="section__inner">
     <div class="section-head">
-      <div class="eyebrow">アクセス・ご予約</div>
+      <div class="eyebrow-num">
+        <span class="eyebrow-num__no">N°06</span>
+        <span class="eyebrow-num__label">Access — アクセス・ご予約</span>
+      </div>
       <h2 class="heading">島へ、会いにきてください。</h2>
     </div>
 
@@ -290,16 +322,17 @@
   </div>
 </section>
 
+<!-- ===== FOOTER ===== -->
 <footer class="site-footer">
   <div class="site-footer__inner">
     <div>
       <div class="site-footer__logo">南風荘</div>
-      <div class="site-footer__en">SETOUCHI · MAEJIMA ISLAND</div>
+      <div class="site-footer__en">Setouchi · Maejima Island</div>
       <p class="site-footer__addr">岡山県瀬戸内市牛窓町牛窓6090-1（前島）<br>TEL 0869-34-3381 ／ 水曜休館</p>
     </div>
     <nav class="site-footer__nav">
-      <a href="#about">島の宿</a>
       <a href="#cuisine">海鮮料理</a>
+      <a href="#about">島の宿</a>
       <a href="#stay">離れ</a>
       <a href="#camp">キャンプ場</a>
       <a href="#access">アクセス</a>
