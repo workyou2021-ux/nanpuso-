@@ -315,7 +315,7 @@ a { color: inherit; }
   color: #211d19; font-size: 13px; font-weight: 500; letter-spacing: 0.04em;
   border: 1px solid rgba(33,29,25,0.2); border-radius: 999px; padding: 10px 20px;
 }
-.site-footer__social svg { width: 16px; height: 16px; flex: none; }
+.site-footer__social svg { width: 20px; height: 20px; flex: none; }
 .site-footer__bottom { border-top: 1px solid rgba(33,29,25,0.08); }
 .site-footer__bottom-inner {
   max-width: 1180px; margin: 0 auto; padding: 18px 28px;
