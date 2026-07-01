@@ -155,15 +155,30 @@ a { color: inherit; }
 .cuisine-hero-media { border-radius: 4px; overflow: hidden; height: clamp(320px, 46vw, 560px); margin: clamp(40px, 5vw, 24px) 0; }
 .cuisine-hero-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
+.cuisine-strip-wrap { position: relative; margin-bottom: clamp(24px, 4vw, 40px); }
 .cuisine-strip {
-  display: flex; gap: 14px; overflow-x: auto; padding: 4px 4px 16px; margin-bottom: clamp(24px, 4vw, 40px);
-  scroll-snap-type: x proximity;
+  display: flex; gap: 14px; overflow-x: auto; padding: 4px 4px 16px; scroll-behavior: smooth;
+  scroll-snap-type: x proximity; scrollbar-width: none;
 }
+.cuisine-strip::-webkit-scrollbar { display: none; }
 .cuisine-strip__item {
   flex: 0 0 auto; width: clamp(160px, 22vw, 220px); height: clamp(120px, 16vw, 160px);
   border-radius: 4px; overflow: hidden; scroll-snap-align: start;
 }
 .cuisine-strip__item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cuisine-strip__item--empty {
+  display: flex; align-items: center; justify-content: center;
+  background: #f1ece1; border: 1px dashed rgba(33,29,25,0.2);
+  font-size: 11px; color: #96897a; letter-spacing: 0.04em; text-align: center; padding: 8px;
+}
+.cuisine-strip__btn {
+  position: absolute; top: 0; bottom: 16px; z-index: 2;
+  width: 40px; border: none; cursor: pointer;
+  background: rgba(250,247,241,0.9); color: #211d19; font-size: 18px; line-height: 1;
+  display: flex; align-items: center; justify-content: center;
+}
+.cuisine-strip__btn--prev { left: 0; background: linear-gradient(to right, #faf7f1 40%, rgba(250,247,241,0)); justify-content: flex-start; }
+.cuisine-strip__btn--next { right: 0; background: linear-gradient(to left, #faf7f1 40%, rgba(250,247,241,0)); justify-content: flex-end; }
 
 .cuisine-points { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0; margin-top: clamp(48px, 6vw, 72px); text-align: left; border-top: 1px solid rgba(33,29,25,0.1); }
 .cuisine-point { padding: 30px 26px; border-bottom: 1px solid rgba(33,29,25,0.1); border-right: 1px solid rgba(33,29,25,0.1); }
