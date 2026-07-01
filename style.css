@@ -74,6 +74,9 @@ a { color: inherit; }
 
 .section-cta { display: flex; justify-content: center; margin-top: clamp(40px, 6vw, 60px); }
 
+.coming-soon { text-align: center; padding: clamp(60px, 10vw, 120px) 0; }
+.coming-soon__note { font-size: 13px; color: #96897a; margin: 18px 0 36px; }
+
 .media-placeholder {
   display: flex; align-items: center; justify-content: center;
   background: #f1ece1; border: 1px dashed rgba(33,29,25,0.2);
