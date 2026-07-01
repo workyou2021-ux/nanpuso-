@@ -157,6 +157,8 @@ a { color: inherit; }
 .cuisine-points { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0; margin-top: clamp(48px, 6vw, 72px); text-align: left; border-top: 1px solid rgba(33,29,25,0.1); }
 .cuisine-point { padding: 30px 26px; border-bottom: 1px solid rgba(33,29,25,0.1); border-right: 1px solid rgba(33,29,25,0.1); }
 .cuisine-point:last-child { border-right: none; }
+.cuisine-point__photo { height: 160px; border-radius: 4px; overflow: hidden; margin-bottom: 18px; }
+.cuisine-point__photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .cuisine-point__no { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 22px; color: #b25a30; margin-bottom: 10px; }
 .cuisine-point__en { font-size: 11px; letter-spacing: 0.18em; color: #96897a; text-transform: uppercase; margin-bottom: 12px; }
 .cuisine-point__title { font-weight: 700; font-size: 18px; margin: 0 0 12px; letter-spacing: 0.01em; }
@@ -178,8 +180,8 @@ a { color: inherit; }
   align-items: center; margin-bottom: clamp(48px, 6vw, 72px);
   padding-bottom: clamp(48px, 6vw, 72px); border-bottom: 1px solid rgba(33,29,25,0.1);
 }
-.villa-feature__media { height: clamp(280px, 34vw, 420px); border-radius: 4px; overflow: hidden; }
-.villa-feature__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.villa-feature__media { height: clamp(280px, 34vw, 420px); display: grid; grid-template-columns: 3fr 2fr; gap: 10px; }
+.villa-feature__media img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 4px; }
 .villa-feature__en { font-size: 11.5px; letter-spacing: 0.18em; color: #b25a30; font-weight: 600; margin-bottom: 10px; text-transform: uppercase; }
 .villa-feature__name { font-weight: 700; font-size: clamp(24px, 3vw, 30px); margin: 0 0 6px; }
 .villa-feature__tagline { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 20px; color: #58524a; margin-bottom: 16px; }
@@ -187,8 +189,8 @@ a { color: inherit; }
 
 .villa-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
 .villa-card { display: flex; flex-direction: column; }
-.villa-card__media { height: 240px; overflow: hidden; border-radius: 4px; }
-.villa-card__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.villa-card__media { height: 220px; display: grid; grid-template-columns: 3fr 2fr; gap: 8px; }
+.villa-card__media img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 4px; }
 .villa-card__body { padding: 22px 2px 0; display: flex; flex-direction: column; flex: 1; }
 .villa-card__en { font-size: 11px; letter-spacing: 0.16em; color: #b25a30; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; }
 .villa-card__name { font-weight: 700; font-size: 21px; margin: 0 0 4px; letter-spacing: 0.01em; }
@@ -239,6 +241,14 @@ a { color: inherit; }
 }
 .map-placeholder span {
   font-family: monospace; font-size: 11px; color: #7a6a58; letter-spacing: 0.06em;
+  background: rgba(250,247,241,0.9); padding: 7px 14px; border-radius: 4px;
+}
+
+.access-photo { position: relative; border-radius: 4px; overflow: hidden; min-height: 320px; }
+.access-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.access-photo__tag {
+  position: absolute; left: 16px; bottom: 16px;
+  font-size: 11px; color: #4a453e; letter-spacing: 0.04em;
   background: rgba(250,247,241,0.9); padding: 7px 14px; border-radius: 4px;
 }
 
