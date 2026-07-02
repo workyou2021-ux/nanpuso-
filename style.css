@@ -265,9 +265,7 @@ a { color: inherit; }
 .review-card__name { font-size: 13px; color: #b25a30; font-weight: 600; }
 .review-card__date { font-size: 11.5px; color: #96897a; }
 
-.review-source { text-align: center; margin-top: 22px; font-size: 11.5px; color: #96897a; letter-spacing: 0.04em; }
-.review-source a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
-.review-source a:hover { color: #b25a30; }
+.review-source { text-align: center; margin-top: clamp(30px, 5vw, 44px); }
 
 /* ===== Access ===== */
 .access-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; align-items: stretch; }
