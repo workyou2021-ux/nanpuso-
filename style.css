@@ -134,6 +134,10 @@ a { color: inherit; }
 .hero__media {
   position: relative; height: min(88vh, 760px); min-height: 540px; overflow: hidden;
   background: linear-gradient(135deg,#cfe0df,#a9c6c9 45%,#7ea6ab);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 @supports (height: 100svh) {
   .hero__media { height: min(88svh, 760px); }
