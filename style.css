@@ -229,7 +229,7 @@ a { color: inherit; }
 /* ===== Stay / Villas (elevated) ===== */
 .villa-feature {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(30px, 5vw, 56px);
-  align-items: center; margin-bottom: clamp(48px, 6vw, 72px);
+  align-items: start; margin-bottom: clamp(48px, 6vw, 72px);
   padding-bottom: clamp(48px, 6vw, 72px); border-bottom: 1px solid rgba(33,29,25,0.1);
 }
 .villa-feature:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
