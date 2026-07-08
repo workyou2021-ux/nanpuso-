@@ -27,6 +27,18 @@ a { color: inherit; }
 .section-head { text-align: center; margin-bottom: clamp(40px, 6vw, 64px); }
 .section-head--voice { margin-bottom: clamp(20px, 3vw, 30px); }
 
+/* ===== News bar ===== */
+.news-bar { max-width: none; background: #f1ece1; border-bottom: 1px solid rgba(178,90,48,0.18); }
+.news-bar__inner { max-width: 1180px; margin: 0 auto; padding: 20px 28px; display: flex; align-items: baseline; gap: 22px; flex-wrap: wrap; }
+.news-bar__label { flex-shrink: 0; font-size: 11px; letter-spacing: 0.22em; color: #b25a30; font-weight: 600; text-transform: uppercase; }
+.news-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; flex: 1; min-width: 200px; }
+.news-item { display: flex; align-items: baseline; gap: 16px; font-size: 13.5px; line-height: 1.7; flex-wrap: wrap; }
+.news-item__date { flex-shrink: 0; font-family: 'Cormorant Garamond', serif; font-style: italic; color: #96897a; font-size: 13px; }
+.news-item__text { color: #3a362f; }
+@media (max-width: 640px) {
+  .news-bar__inner { flex-direction: column; gap: 10px; }
+}
+
 .eyebrow-num { display: flex; align-items: baseline; gap: 10px; justify-content: center; margin-bottom: 20px; }
 .eyebrow-num__no { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 17px; color: #b25a30; }
 .eyebrow-num__label { font-size: 11.5px; letter-spacing: 0.28em; color: #96897a; font-weight: 600; text-transform: uppercase; }
