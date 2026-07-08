@@ -186,9 +186,9 @@ a { color: inherit; }
 }
 .hero__title {
   animation: nf-rise 1s ease 0.15s both;
-  font-weight: 700; color: #fff;
-  font-size: clamp(30px, 6vw, 60px); line-height: 1.42; margin: 0;
-  text-shadow: 0 2px 22px rgba(0,0,0,0.28); letter-spacing: 0.02em;
+  font-family: 'Zen Old Mincho', serif; font-weight: 600; color: #fff;
+  font-size: clamp(30px, 6vw, 60px); line-height: 1.5; margin: 0;
+  text-shadow: 0 2px 22px rgba(0,0,0,0.28); letter-spacing: 0.04em;
 }
 .hero__lead {
   animation: nf-rise 1s ease 0.35s both;
