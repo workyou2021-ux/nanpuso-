@@ -62,6 +62,9 @@ a { color: inherit; }
 .access-route__label { font-size: 11.5px; letter-spacing: 0.2em; color: #b25a30; font-weight: 600; margin-bottom: 12px; text-transform: uppercase; }
 .access-route__title { font-weight: 700; font-size: 15.5px; margin: 0 0 12px; color: #211d19; }
 .access-route__desc { font-size: 13.5px; line-height: 2; color: #58524a; margin: 0; }
+.access-route__desc .seg { display: inline-block; }
+.access-route__desc .arw { color: #b25a30; margin: 0 4px; }
+.access-step__photo { display: block; max-width: 340px; width: 100%; border-radius: 8px; margin-top: 16px; }
 @media (max-width: 640px) {
   .access-routes { grid-template-columns: 1fr; }
   .access-step { gap: 16px; }
