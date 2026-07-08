@@ -41,6 +41,39 @@ a { color: inherit; }
   .news-bar__inner { flex-direction: column; gap: 10px; }
 }
 
+/* ===== Access page ===== */
+.access-steps { max-width: 760px; margin: 0 auto clamp(48px, 7vw, 72px); }
+.access-step { display: flex; gap: 22px; padding: 26px 0; border-bottom: 1px solid rgba(33,29,25,0.08); }
+.access-step:last-child { border-bottom: none; }
+.access-step__no {
+  flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: #f1ece1; color: #b25a30; font-family: 'Cormorant Garamond', serif;
+  font-style: italic; font-size: 20px; font-weight: 600;
+}
+.access-step__title { font-weight: 700; font-size: 16.5px; margin: 8px 0 10px; color: #211d19; }
+.access-step__desc { font-size: 14px; line-height: 2; color: #58524a; margin: 0; }
+.access-step__note { display: block; margin-top: 8px; font-size: 12.5px; color: #96897a; }
+.access-step__link { display: inline-block; margin-top: 8px; font-size: 13px; color: #b25a30; text-decoration: underline; text-underline-offset: 3px; }
+.access-step__link:hover { color: #7a3c1e; }
+
+.access-routes { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 760px; margin: 0 auto clamp(48px, 7vw, 72px); }
+.access-route { background: #fff; border: 1px solid rgba(33,29,25,0.08); border-radius: 8px; padding: 26px 28px; }
+.access-route__label { font-size: 11.5px; letter-spacing: 0.2em; color: #b25a30; font-weight: 600; margin-bottom: 12px; text-transform: uppercase; }
+.access-route__title { font-weight: 700; font-size: 15.5px; margin: 0 0 12px; color: #211d19; }
+.access-route__desc { font-size: 13.5px; line-height: 2; color: #58524a; margin: 0; }
+@media (max-width: 640px) {
+  .access-routes { grid-template-columns: 1fr; }
+  .access-step { gap: 16px; }
+}
+
+.access-pickup {
+  max-width: 760px; margin: 0 auto clamp(48px, 7vw, 72px);
+  background: #f1ece1; border-radius: 8px; padding: 30px 32px; text-align: center;
+}
+.access-pickup__title { font-weight: 700; font-size: 17px; margin: 0 0 12px; color: #211d19; }
+.access-pickup__desc { font-size: 14px; line-height: 2; color: #58524a; margin: 0 0 18px; }
+
 /* ===== News archive page ===== */
 .news-page-list { max-width: 760px; margin: 0 auto; }
 .news-page-item { display: flex; gap: 28px; align-items: baseline; padding: 26px 0; border-bottom: 1px solid rgba(33,29,25,0.08); }
