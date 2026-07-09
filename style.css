@@ -16,6 +16,10 @@ a { color: inherit; }
 @media (max-width: 640px) {
   .mobile-break { display: inline; }
 }
+.pc-break { display: none; }
+@media (min-width: 641px) {
+  .pc-break { display: inline; }
+}
 
 @keyframes nf-rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes nf-fade { from { opacity: 0; } to { opacity: 1; } }
