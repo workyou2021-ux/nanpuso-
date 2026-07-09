@@ -129,7 +129,7 @@ a { color: inherit; }
 .btn.btn--pill-lg { color: #faf7f1; background: #7a3c1e; margin: 14px 28px 20px; text-align: center; padding: 14px; font-size: 15px; }
 .btn.btn--pill-lg:hover { background: #b25a30; }
 .btn--hero { color: #211d19; background: #faf7f1; padding: 15px 34px; font-size: 14px; box-shadow: 0 10px 30px rgba(0,0,0,0.22); animation: nf-rise 1s ease 0.55s both; margin-top: 38px; }
-.btn--hero:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(0,0,0,0.3); }
+.btn--hero:hover { color: #b25a30; background: #fff; box-shadow: 0 14px 36px rgba(0,0,0,0.3); }
 .btn--block { margin-top: 30px; display: flex; align-items: center; justify-content: center; color: #faf7f1; background: #211d19; padding: 16px; font-size: 15px; }
 .btn--block:hover { background: #7a3c1e; }
 .btn--outline { color: #211d19; border: 1px solid rgba(33,29,25,0.28); padding: 11px 22px; font-size: 12.5px; }
@@ -173,7 +173,7 @@ a { color: inherit; }
   font-size: 13px; letter-spacing: 0.05em; font-weight: 500;
 }
 .nav-desktop a { text-decoration: none; color: #58524a; white-space: nowrap; transition: color 0.2s ease; }
-.nav-desktop a:hover { color: #b25a30; }
+.nav-desktop a:not(.btn):hover { color: #b25a30; }
 
 .burger {
   display: none; flex-direction: column; gap: 5px;
