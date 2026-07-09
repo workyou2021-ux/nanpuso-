@@ -12,6 +12,11 @@ body {
 img { max-width: 100%; }
 a { color: inherit; }
 
+.mobile-break { display: none; }
+@media (max-width: 640px) {
+  .mobile-break { display: inline; }
+}
+
 @keyframes nf-rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes nf-fade { from { opacity: 0; } to { opacity: 1; } }
 
