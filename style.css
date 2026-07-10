@@ -86,6 +86,37 @@ a { color: inherit; }
 .access-pickup__title { font-weight: 700; font-size: 17px; margin: 0 0 12px; color: #211d19; }
 .access-pickup__desc { font-size: 14px; line-height: 2; color: #58524a; margin: 0 0 18px; }
 
+/* ===== Reservation page ===== */
+.reserve-primary {
+  max-width: 560px; margin: 0 auto clamp(48px, 7vw, 64px);
+  background: #211d19; border-radius: 10px; padding: 40px 36px; text-align: center;
+}
+.reserve-primary__label { font-size: 11.5px; letter-spacing: 0.24em; color: #d69b6b; font-weight: 600; text-transform: uppercase; margin-bottom: 14px; }
+.reserve-primary__tel { display: block; font-family: 'Zen Kaku Gothic New', sans-serif; font-weight: 700; font-size: clamp(30px, 6vw, 40px); letter-spacing: 0.06em; color: #fff; text-decoration: none; margin-bottom: 14px; transition: color 0.2s ease; }
+.reserve-primary__tel:hover { color: #d69b6b; }
+.reserve-primary__note { font-size: 13px; line-height: 1.9; color: rgba(244,237,225,0.72); margin: 0; }
+
+.reserve-divider { display: flex; align-items: center; gap: 16px; max-width: 560px; margin: 0 auto clamp(40px, 6vw, 56px); }
+.reserve-divider::before, .reserve-divider::after { content: ""; flex: 1; height: 1px; background: rgba(33,29,25,0.12); }
+.reserve-divider__text { font-size: 12px; letter-spacing: 0.1em; color: #96897a; white-space: nowrap; }
+
+.reserve-otas { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 640px; margin: 0 auto clamp(48px, 7vw, 64px); }
+.reserve-ota-card { background: #fff; border: 1px solid rgba(33,29,25,0.08); border-radius: 8px; padding: 28px 24px; text-align: center; display: flex; flex-direction: column; align-items: center; }
+.reserve-ota-card__badge { display: inline-block; font-weight: 700; font-size: 15px; letter-spacing: 0.04em; padding: 6px 16px; border-radius: 999px; margin-bottom: 14px; }
+.reserve-ota-card__badge--jalan { color: #fff; background: #ff5b00; }
+.reserve-ota-card__badge--rakuten { color: #fff; background: #bf0000; }
+.reserve-ota-card__desc { font-size: 13px; line-height: 1.8; color: #58524a; margin: 0 0 20px; }
+
+.reserve-fax {
+  max-width: 560px; margin: 0 auto clamp(40px, 6vw, 56px);
+  text-align: center; font-size: 13px; color: #96897a; line-height: 1.9;
+}
+.reserve-fax strong { color: #58524a; font-weight: 700; }
+
+@media (max-width: 560px) {
+  .reserve-otas { grid-template-columns: 1fr; }
+}
+
 /* ===== News archive page ===== */
 .news-page-list { max-width: 760px; margin: 0 auto; }
 .news-page-item { display: flex; gap: 28px; align-items: baseline; padding: 26px 0; border-bottom: 1px solid rgba(33,29,25,0.08); }
