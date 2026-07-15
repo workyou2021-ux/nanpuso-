@@ -117,6 +117,27 @@ a { color: inherit; }
   .reserve-otas { grid-template-columns: 1fr; }
 }
 
+/* ===== About (本館) page ===== */
+.about-hero-media { max-width: 900px; margin: 0 auto clamp(48px, 7vw, 72px); border-radius: 8px; overflow: hidden; }
+.about-hero-media img { width: 100%; display: block; }
+
+.about-feature { display: grid; grid-template-columns: 1fr; gap: 26px; align-items: center; max-width: 900px; margin: 0 auto clamp(56px, 8vw, 88px); }
+.about-feature__media { border-radius: 8px; overflow: hidden; height: clamp(220px, 32vw, 340px); }
+.about-feature__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.about-feature__en { font-size: 11px; letter-spacing: 0.2em; color: #b25a30; font-weight: 600; text-transform: uppercase; margin-bottom: 8px; }
+.about-feature__title { font-weight: 700; font-size: clamp(19px, 2.4vw, 23px); margin: 0 0 12px; color: #211d19; }
+.about-feature__desc { font-size: 14px; line-height: 2; color: #58524a; margin: 0; }
+@media (min-width: 760px) {
+  .about-feature { grid-template-columns: 1fr 1fr; gap: 44px; }
+  .about-feature--reverse .about-feature__media { order: 2; }
+}
+
+.about-amenities { max-width: 760px; margin: 0 auto clamp(48px, 7vw, 72px); }
+.about-amenities__title { text-align: center; font-weight: 700; font-size: 15.5px; color: #211d19; margin: 0 0 20px; }
+.about-amenities .tag-row { justify-content: center; }
+
+.about-note { max-width: 760px; margin: 0 auto clamp(40px, 6vw, 56px); text-align: center; font-size: 12.5px; color: #96897a; line-height: 1.9; }
+
 /* ===== Price page ===== */
 .price-section { max-width: 760px; margin: 0 auto clamp(56px, 8vw, 88px); }
 .price-section__head { margin-bottom: 22px; }
