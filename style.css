@@ -121,8 +121,20 @@ a { color: inherit; }
 .terasu-hero { position: relative; height: min(88vh, 760px); min-height: 540px; overflow: hidden; background: #1c1815; }
 @supports (height: 100svh) { .terasu-hero { height: min(88svh, 760px); } }
 @media (max-width: 480px) { .terasu-hero { height: 560px; min-height: 560px; } }
-.terasu-hero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
-.terasu-hero__scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,24,28,0.55) 0%, rgba(20,24,28,0.15) 40%, rgba(20,24,28,0.65) 100%); }
+.terasu-hero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; opacity: 0; animation: terasu-hero-crossfade5 40s ease-in-out infinite; }
+.terasu-hero__img:nth-child(1) { animation-delay: 0s; }
+.terasu-hero__img:nth-child(2) { animation-delay: 8s; }
+.terasu-hero__img:nth-child(3) { animation-delay: 16s; }
+.terasu-hero__img:nth-child(4) { animation-delay: 24s; }
+.terasu-hero__img:nth-child(5) { animation-delay: 32s; }
+@keyframes terasu-hero-crossfade5 {
+  0%      { opacity: 0; }
+  3.75%   { opacity: 1; }
+  16.25%  { opacity: 1; }
+  20%     { opacity: 0; }
+  100%    { opacity: 0; }
+}
+.terasu-hero__scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,24,28,0.28) 0%, rgba(20,24,28,0.08) 40%, rgba(20,24,28,0.35) 100%); }
 .terasu-hero__content { position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 24px; }
 .terasu-hero__eyebrow { font-size: 11.5px; letter-spacing: 0.4em; color: rgba(255,255,255,0.85); margin-bottom: 22px; }
 .terasu-hero__title { font-family: 'Zen Old Mincho', serif; font-weight: 600; color: #fff; font-size: clamp(26px, 5vw, 48px); line-height: 1.5; margin: 0; text-shadow: 0 2px 22px rgba(0,0,0,0.35); }
@@ -131,15 +143,28 @@ a { color: inherit; }
 
 .terasu-section { background: #faf7f1; }
 
-.terasu-detail-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 900px; margin: 0 auto clamp(56px, 8vw, 88px); }
+.terasu-detail-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; max-width: 900px; margin: 0 auto clamp(56px, 8vw, 88px); }
 .terasu-detail-card { border-radius: 8px; overflow: hidden; background: #fff; border: 1px solid rgba(33,29,25,0.08); }
 .terasu-detail-card img { width: 100%; height: clamp(180px, 26vw, 260px); object-fit: cover; display: block; }
 .terasu-detail-card__caption { font-size: 12.5px; color: #58524a; text-align: center; padding: 14px 12px; margin: 0; }
+@media (max-width: 760px) { .terasu-detail-row { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .terasu-detail-row { grid-template-columns: 1fr; } }
+.terasu-detail-card--portrait img { height: clamp(300px, 42vw, 420px); }
+@media (max-width: 560px) { .terasu-detail-card--portrait img { height: clamp(320px, 90vw, 440px); } }
 
 /* ===== About (本館) page ===== */
-.about-hero-media { max-width: 900px; margin: 0 auto clamp(48px, 7vw, 72px); border-radius: 8px; overflow: hidden; }
-.about-hero-media img { width: 100%; display: block; }
+.about-hero-media { position: relative; max-width: 1040px; margin: 0 auto clamp(48px, 7vw, 72px); border-radius: 4px; overflow: hidden; height: clamp(340px, 48vw, 600px); }
+.about-hero-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 15%; display: block; opacity: 0; animation: about-hero-crossfade3 24s ease-in-out infinite; }
+.about-hero-media img:nth-child(1) { animation-delay: 0s; }
+.about-hero-media img:nth-child(2) { animation-delay: 8s; }
+.about-hero-media img:nth-child(3) { animation-delay: 16s; }
+@keyframes about-hero-crossfade3 {
+  0%      { opacity: 0; }
+  6.25%   { opacity: 1; }
+  27.08%  { opacity: 1; }
+  33.33%  { opacity: 0; }
+  100%    { opacity: 0; }
+}
 
 .about-feature { display: grid; grid-template-columns: 1fr; gap: 26px; align-items: center; max-width: 900px; margin: 0 auto clamp(56px, 8vw, 88px); }
 .about-feature__media { border-radius: 8px; overflow: hidden; height: clamp(220px, 32vw, 340px); }
@@ -152,11 +177,21 @@ a { color: inherit; }
   .about-feature--reverse .about-feature__media { order: 2; }
 }
 
+.about-floorplan-head { max-width: 640px; margin: 0 auto 20px; text-align: center; }
+.about-floorplan-head .about-feature__desc { margin: 0 auto; }
+.about-floorplan { max-width: 800px; margin: 0 auto clamp(56px, 8vw, 88px); background: #fff; border-radius: 8px; padding: clamp(16px, 3vw, 28px); box-shadow: 0 4px 24px rgba(33,29,25,0.07); }
+.about-floorplan img { width: 100%; display: block; }
+.about-floorplan__caption { margin: 14px 0 0; text-align: center; font-size: 12.5px; color: #96897a; }
+
 .about-amenities { max-width: 760px; margin: 0 auto clamp(48px, 7vw, 72px); }
 .about-amenities__title { text-align: center; font-weight: 700; font-size: 15.5px; color: #211d19; margin: 0 0 20px; }
 .about-amenities .tag-row { justify-content: center; }
 
 .about-note { max-width: 760px; margin: 0 auto clamp(40px, 6vw, 56px); text-align: center; font-size: 12.5px; color: #96897a; line-height: 1.9; }
+
+.info-note-box { max-width: 640px; margin: 0 auto clamp(40px, 6vw, 56px); background: #f1ece1; border-radius: 8px; padding: 24px 28px; }
+.info-note-box p { margin: 0 0 10px; font-size: 14px; line-height: 1.9; color: #58524a; }
+.info-note-box p:last-child { margin-bottom: 0; }
 
 /* ===== Price page ===== */
 .price-section { max-width: 760px; margin: 0 auto clamp(56px, 8vw, 88px); }
@@ -352,7 +387,7 @@ a { color: inherit; }
 .hero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
 .hero__scrim {
   position: absolute; inset: 0;
-  background: linear-gradient(to bottom, rgba(20,18,15,0.28) 0%, rgba(20,18,15,0.05) 40%, rgba(20,18,15,0.4) 100%);
+  background: linear-gradient(to bottom, rgba(20,18,15,0.14) 0%, rgba(20,18,15,0.02) 40%, rgba(20,18,15,0.22) 100%);
 }
 .hero__content {
   position: absolute; inset: 0; display: flex; flex-direction: column;
@@ -377,6 +412,9 @@ a { color: inherit; }
 
 /* ===== Cuisine (primary section) ===== */
 .cuisine-section { text-align: center; }
+.cuisine-section .about-feature__en,
+.cuisine-section .about-feature__title,
+.cuisine-section .about-feature__desc { text-align: left; }
 
 .cuisine-hero-media { border-radius: 4px; overflow: hidden; height: clamp(360px, 56vw, 680px); margin: clamp(40px, 5vw, 24px) 0; }
 .cuisine-hero-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
