@@ -65,7 +65,7 @@
   <img src="images/terasu_hero_exterior.jpg" alt="緑越しに見る南風テラスの外観" class="terasu-hero__img">
   <img src="images/terasu_hero_bath.jpg" alt="南風テラスの露天風呂から望む瀬戸内海" class="terasu-hero__img">
   <img src="images/terasu_hero_flare.jpg" alt="南風テラスの木格子と陽光" class="terasu-hero__img">
-  <img src="images/terasu_hero_night1.jpg" alt="夜の南風テラス、木格子越しの灯り" class="terasu-hero__img">
+  <img src="images/terasu_hero_night1.jpg" alt="夜の南風テラス外観、灯りに包まれたウッドデッキ" class="terasu-hero__img" style="object-position: center 40%;">
   <img src="images/terasu_hero_stars.jpg" alt="南風テラスから望む夜空と星" class="terasu-hero__img" style="object-position: center 75%;">
   <div class="terasu-hero__scrim"></div>
   <div class="terasu-hero__content">
@@ -133,37 +133,47 @@
       </div>
     </div>
 
-    <div class="terasu-detail-row" style="grid-template-columns: 1fr 1fr; max-width: 720px;">
+    <div class="terasu-detail-row" style="grid-template-columns: 1fr; max-width: 560px;">
       <div class="terasu-detail-card">
-        <img src="images/terasu_kettle.jpg" alt="ウェルカムドリンク用の鉄瓶" loading="lazy" decoding="async" style="object-position: center 15%;">
-        <p class="terasu-detail-card__caption">ウェルカムドリンクをご用意</p>
-      </div>
-      <div class="terasu-detail-card">
-        <img src="images/terasu_welcome_beer.jpg" alt="ウェルカムドリンクの牛窓ビール" loading="lazy" decoding="async">
+        <img src="images/terasu_welcome_beer.jpg" alt="ウェルカムドリンクの牛窓ビール" loading="lazy" decoding="async" style="height: clamp(320px, 40vw, 420px);">
         <p class="terasu-detail-card__caption">冷蔵庫に牛窓ビール・地酒・ソフトドリンクをご用意</p>
       </div>
     </div>
 
-    <div class="terasu-detail-row terasu-detail-row--portrait">
+    <div class="terasu-detail-row terasu-detail-row--portrait" style="grid-template-columns: 1fr 1fr; max-width: 820px;">
       <div class="terasu-detail-card terasu-detail-card--portrait">
-        <img src="images/terasu_geta.jpg" alt="ふたり分の下駄" loading="lazy" decoding="async">
+        <img src="images/terasu_geta.jpg" alt="ふたり分の下駄" loading="lazy" decoding="async" style="object-position: center 100%;">
         <p class="terasu-detail-card__caption">おふたりで、島の夜をゆっくりと</p>
       </div>
       <div class="terasu-detail-card terasu-detail-card--portrait">
         <img src="images/terasu_bath.jpg" alt="扉を開ければ一面の海が広がる露天風呂" loading="lazy" decoding="async">
         <p class="terasu-detail-card__caption">扉を開ければ、一面の海</p>
       </div>
+    </div>
+
+    <div class="terasu-detail-row terasu-detail-row--portrait" style="grid-template-columns: 1fr 1fr; max-width: 820px;">
       <div class="terasu-detail-card terasu-detail-card--portrait">
         <img src="images/terasu.jpg" alt="洗面台とオリーブのアメニティ" loading="lazy" decoding="async">
         <p class="terasu-detail-card__caption">洗面台にはオリーブのアメニティを</p>
       </div>
+      <div class="terasu-detail-card terasu-detail-card--portrait">
+        <img src="images/terasu_amenity.jpg" alt="牛窓の日本オリーブ製アメニティ籠" loading="lazy" decoding="async">
+        <p class="terasu-detail-card__caption">牛窓産オリーブのアメニティを籠でご用意</p>
+      </div>
     </div>
 
-    <div class="terasu-detail-row terasu-detail-row--portrait">
+    <div class="terasu-detail-row terasu-detail-row--portrait" style="grid-template-columns: 1fr 1fr; max-width: 820px;">
       <div class="terasu-detail-card terasu-detail-card--portrait">
         <img src="images/terasu_teaset.jpg" alt="備前焼のお茶セット" loading="lazy" decoding="async">
         <p class="terasu-detail-card__caption">備前焼のお茶セットで、ひと休み</p>
       </div>
+      <div class="terasu-detail-card terasu-detail-card--portrait">
+        <img src="images/terasu_hibachi.jpg" alt="火鉢と鉄瓶" loading="lazy" decoding="async">
+        <p class="terasu-detail-card__caption">火鉢で沸かす、お湯の温かさ</p>
+      </div>
+    </div>
+
+    <div class="terasu-detail-row terasu-detail-row--portrait" style="grid-template-columns: 1fr 1fr; max-width: 820px;">
       <div class="terasu-detail-card terasu-detail-card--portrait">
         <img src="images/terasu_coffee.jpg" alt="お部屋のコーヒーメーカー" loading="lazy" decoding="async">
         <p class="terasu-detail-card__caption">コーヒーメーカーもご用意しています</p>
@@ -174,51 +184,57 @@
       </div>
     </div>
 
-    <div class="about-amenities">
-      <h3 class="about-amenities__title">お風呂・アメニティ</h3>
-      <div class="tag-row">
-        <span class="tag tag--outline">シャワーブース</span>
-        <span class="tag tag--outline">オリーブ入浴剤</span>
-        <span class="tag tag--outline">オリーブシャンプー・ボディソープ</span>
-        <span class="tag tag--outline">浴衣・タオル</span>
+    <div class="amenity-card">
+      <div class="amenity-card__group">
+        <h3 class="amenity-card__title">基本情報</h3>
+        <div class="tag-row">
+          <span class="tag tag--fill">定員2名</span>
+          <span class="tag tag--fill">チェックイン15:00〜</span>
+          <span class="tag tag--fill">チェックアウト11:00</span>
+          <span class="tag tag--fill">全館禁煙</span>
+          <span class="tag tag--fill">ペット不可</span>
+          <span class="tag tag--fill">砂浜徒歩5分</span>
+        </div>
       </div>
-    </div>
 
-    <div class="about-amenities">
-      <h3 class="about-amenities__title">キッチン</h3>
-      <div class="tag-row">
-        <span class="tag tag--outline">冷蔵庫</span>
-        <span class="tag tag--outline">IHコンロ</span>
-        <span class="tag tag--outline">オーブンレンジ</span>
-        <span class="tag tag--outline">炊飯器</span>
-        <span class="tag tag--outline">湯沸し器</span>
-        <span class="tag tag--outline">炭酸水メーカー</span>
-        <span class="tag tag--outline">調理器具一式</span>
+      <div class="amenity-card__group">
+        <h3 class="amenity-card__title">お風呂・アメニティ</h3>
+        <div class="tag-row">
+          <span class="tag tag--outline">シャワーブース</span>
+          <span class="tag tag--outline">オリーブ入浴剤</span>
+          <span class="tag tag--outline">オリーブシャンプー・ボディソープ</span>
+          <span class="tag tag--outline">浴衣・タオル</span>
+        </div>
       </div>
-    </div>
 
-    <div class="about-amenities">
-      <h3 class="about-amenities__title">お部屋・その他</h3>
-      <div class="tag-row">
-        <span class="tag tag--outline">天然木フローリング・ローベッド</span>
-        <span class="tag tag--outline">縁側</span>
-        <span class="tag tag--outline">火鉢</span>
-        <span class="tag tag--outline">加湿器・ヒーター</span>
-        <span class="tag tag--outline">Bluetoothスピーカー</span>
-        <span class="tag tag--outline">洗濯機・お手洗い</span>
-        <span class="tag tag--outline">無料Wi-Fi</span>
-        <span class="tag tag--outline">無料駐車場</span>
+      <div class="amenity-card__group">
+        <h3 class="amenity-card__title">キッチン</h3>
+        <div class="tag-row">
+          <span class="tag tag--outline">冷蔵庫</span>
+          <span class="tag tag--outline">IHコンロ</span>
+          <span class="tag tag--outline">オーブンレンジ</span>
+          <span class="tag tag--outline">炊飯器</span>
+          <span class="tag tag--outline">湯沸し器</span>
+          <span class="tag tag--outline">炭酸水メーカー</span>
+          <span class="tag tag--outline">調理器具一式</span>
+        </div>
       </div>
-      <p class="price-note" style="text-align:center; margin-top: 20px;">※建物内に2箇所、1段の段差がございます。<br>※アメニティは牛窓・日本オリーブ株式会社のオリーブ製品をご用意しています。</p>
-    </div>
 
-    <div class="tag-row tag-row--center">
-      <span class="tag tag--fill">定員2名</span>
-      <span class="tag tag--fill">チェックイン15:00〜</span>
-      <span class="tag tag--fill">チェックアウト11:00</span>
-      <span class="tag tag--fill">全館禁煙</span>
-      <span class="tag tag--fill">ペット不可</span>
-      <span class="tag tag--fill">砂浜徒歩5分</span>
+      <div class="amenity-card__group">
+        <h3 class="amenity-card__title">お部屋・その他</h3>
+        <div class="tag-row">
+          <span class="tag tag--outline">天然木フローリング・ローベッド</span>
+          <span class="tag tag--outline">縁側</span>
+          <span class="tag tag--outline">火鉢</span>
+          <span class="tag tag--outline">加湿器・ヒーター</span>
+          <span class="tag tag--outline">Bluetoothスピーカー</span>
+          <span class="tag tag--outline">洗濯機・お手洗い</span>
+          <span class="tag tag--outline">無料Wi-Fi</span>
+          <span class="tag tag--outline">無料駐車場</span>
+        </div>
+      </div>
+
+      <p class="price-note" style="text-align:center; margin-top: 24px;">※建物内に2箇所、1段の段差がございます。<br>※アメニティは牛窓・日本オリーブ株式会社のオリーブ製品をご用意しています。</p>
     </div>
 
     <div class="section-cta">
