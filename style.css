@@ -232,6 +232,9 @@ a { color: inherit; }
 /* スマホ幅でだけ効く改行。PC幅では通常の折り返しに戻る */
 br.sp { display: none; }
 @media (max-width: 760px) { br.sp { display: inline; } }
+/* PC幅でだけ効く改行。スマホ幅では折り返しに任せる */
+br.pc { display: inline; }
+@media (max-width: 760px) { br.pc { display: none; } }
 
 .price-styles { display: flex; flex-direction: column; gap: 16px; margin-bottom: 24px; }
 .price-style { background: #fff; border: 1px solid rgba(33,29,25,0.08); border-radius: 8px; padding: 22px 24px; }
