@@ -229,6 +229,10 @@ a { color: inherit; }
 
 .price-note { font-size: 12.5px; line-height: 1.9; color: #96897a; margin: 14px 4px 0; }
 
+/* スマホ幅でだけ効く改行。PC幅では通常の折り返しに戻る */
+br.sp { display: none; }
+@media (max-width: 760px) { br.sp { display: inline; } }
+
 .price-styles { display: flex; flex-direction: column; gap: 16px; margin-bottom: 24px; }
 .price-style { background: #fff; border: 1px solid rgba(33,29,25,0.08); border-radius: 8px; padding: 22px 24px; }
 .price-style__name { font-weight: 700; font-size: 14.5px; color: #211d19; margin: 0 0 6px; }
