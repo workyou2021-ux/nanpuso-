@@ -370,7 +370,10 @@ br.pc { display: inline; }
   display: none; flex-direction: column; gap: 5px;
   background: none; border: none; cursor: pointer; padding: 8px;
 }
-.burger span { display: block; width: 22px; height: 2px; background: #211d19; border-radius: 2px; }
+.burger span { display: block; width: 22px; height: 2px; background: #211d19; border-radius: 2px; transition: transform 0.25s ease, opacity 0.2s ease; }
+.burger.is-active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.burger.is-active span:nth-child(2) { opacity: 0; }
+.burger.is-active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 .nav-mobile {
   display: none; flex-direction: column;

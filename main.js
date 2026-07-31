@@ -5,11 +5,13 @@
 
   const closeMenu = () => {
     menu.classList.remove('is-open');
+    burger.classList.remove('is-active');
     burger.setAttribute('aria-expanded', 'false');
   };
 
   burger.addEventListener('click', () => {
     const isOpen = menu.classList.toggle('is-open');
+    burger.classList.toggle('is-active', isOpen);
     burger.setAttribute('aria-expanded', String(isOpen));
   });
 
