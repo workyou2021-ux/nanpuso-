@@ -320,7 +320,7 @@ br.pc { display: inline; }
 
 .muted { color: #96897a; font-size: 13px; }
 
-.section-cta { display: flex; justify-content: center; margin-top: clamp(40px, 6vw, 60px); margin-bottom: clamp(40px, 6vw, 60px); }
+.section-cta { display: flex; justify-content: center; margin-top: clamp(40px, 6vw, 60px); margin-bottom: clamp(56px, 8vw, 88px); }
 
 .coming-soon { text-align: center; padding: clamp(60px, 10vw, 120px) 0; }
 .coming-soon__note { font-size: 13px; color: #96897a; margin: 18px 0 36px; }
