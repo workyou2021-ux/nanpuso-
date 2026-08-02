@@ -388,7 +388,7 @@ br.pc { display: inline; }
 }
 .nav-mobile a:first-child { border-top: none; }
 
-@media (max-width: 960px) {
+@media (max-width: 1200px) {
   .nav-desktop { display: none; }
   .header-tel { display: flex; }
   .burger { display: flex; }
