@@ -345,14 +345,14 @@ br.pc { display: inline; }
 }
 .site-header__inner {
   max-width: 1180px; margin: 0 auto; padding: 16px 28px;
-  display: flex; align-items: center; justify-content: space-between;
+  display: flex; align-items: center; justify-content: space-between; gap: 20px;
 }
 .logo { text-decoration: none; color: #211d19; display: flex; align-items: baseline; gap: 10px; }
 .logo__ja { font-weight: 700; font-size: 22px; letter-spacing: 0.1em; }
 .logo__en { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 13px; letter-spacing: 0.1em; color: #b25a30; }
 
 .nav-desktop {
-  display: flex; gap: 26px; align-items: center;
+  display: flex; gap: 18px; align-items: center;
   font-size: 13px; letter-spacing: 0.05em; font-weight: 500;
 }
 .nav-desktop a { text-decoration: none; color: #58524a; white-space: nowrap; transition: color 0.2s ease; }

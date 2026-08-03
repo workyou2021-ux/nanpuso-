@@ -21,6 +21,22 @@
 })();
 
 (() => {
+  if (!location.hash) return;
+  let target;
+  try {
+    target = document.querySelector(location.hash);
+  } catch (e) {
+    return;
+  }
+  if (!target) return;
+  window.addEventListener('load', () => {
+    requestAnimationFrame(() => {
+      target.scrollIntoView({ block: 'start' });
+    });
+  });
+})();
+
+(() => {
   const strip = document.getElementById('cuisine-strip');
   if (!strip) return;
 
