@@ -252,8 +252,8 @@ br.pc { display: inline; }
 .price-block-simple__sub { font-size: 12.5px; color: #96897a; }
 
 @media (max-width: 560px) {
-  .price-table--split .price-row { flex-wrap: wrap; }
-  .price-table--split .price-row__label { flex-basis: 100%; margin-bottom: 8px; }
+  .price-table--split .price-row { flex-wrap: wrap; padding: 12px 4px; gap: 4px 16px; }
+  .price-table--split .price-row__label { flex-basis: 100%; margin-bottom: 0; }
   .price-split-head { display: none; }
   .price-table--split .price-row__weekday::before { content: "平日 "; font-size: 10.5px; color: #96897a; }
   .price-table--split .price-row__weekend::before { content: "土日祝 "; font-size: 10.5px; color: #96897a; }
