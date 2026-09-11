@@ -44,7 +44,7 @@ a { color: inherit; }
 .news-item { display: flex; align-items: baseline; gap: 16px; font-size: 13.5px; line-height: 1.7; flex-wrap: wrap; }
 .news-item__date { flex-shrink: 0; font-family: 'Cormorant Garamond', serif; font-style: italic; color: #96897a; font-size: 13px; }
 .news-item__text { color: #3a362f; }
-.news-item__text a, .news-page-item__text a { color: #b25a30; text-decoration: underline; text-underline-offset: 3px; }
+.news-item__text a, .news-page-item__text a { color: #b25a30; text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
 .news-bar__more { flex-shrink: 0; font-size: 12.5px; color: #b25a30; text-decoration: none; letter-spacing: 0.03em; white-space: nowrap; }
 .news-bar__more:hover { text-decoration: underline; }
 @media (max-width: 640px) {
